@@ -1,12 +1,24 @@
-# React + Vite
+# Tic Tac Toe (React)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple Tic Tac Toe game built using **React.js**.  
+This project was created as part of my journey to learn and practice React as a beginner.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Two-player game (X and O)
+- Detects win and draw conditions
+- All game state and moves handled using the `useState` hook
+- Basic responsive UI
 
-## Expanding the ESLint configuration
+## Purpose
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+This is a beginner-friendly project I built while learning the fundamentals of React.
+Through this project, I gained a good understanding of:
+
+- Functional components
+- Props
+- The useState hook
+- Component structure
+- Basic state management in React
+
+Check out the hosted page!!!
