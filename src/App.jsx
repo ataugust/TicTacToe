@@ -1,8 +1,7 @@
 import { useState, useEffect } from 'react';
 
-// --- Main App Component (Acts as a router) ---
 export default function App() {
-  const [gameMode, setGameMode] = useState(null); // 'pvp', 'pvc', or null
+  const [gameMode, setGameMode] = useState(null);
 
   const renderGameMode = () => {
     switch (gameMode) {
@@ -22,7 +21,6 @@ export default function App() {
   );
 }
 
-// --- Game Mode Selection Menu ---
 function GameMenu({ onSelectMode }) {
   return (
     <>
@@ -47,7 +45,7 @@ function GameMenu({ onSelectMode }) {
   );
 }
 
-// --- Shared Square Component ---
+
 function Square({ value, onSquareClick }) {
   return (
     <button
@@ -59,7 +57,7 @@ function Square({ value, onSquareClick }) {
   );
 }
 
-// --- Player vs. Computer Game Component ---
+
 function SinglePlayerGame({ onBackToMenu }) {
   const [squares, setSquares] = useState(Array(9).fill(null));
   const [isXNext, setIsXNext] = useState(true); // Player 'X' is human
@@ -193,7 +191,6 @@ function TwoPlayerGame({ onBackToMenu }) {
 }
 
 
-// --- Reusable Board UI Component ---
 function BoardUI({ squares, onSquareClick, status, onReset, onBackToMenu }) {
   return (
     <>
@@ -237,7 +234,7 @@ function BoardUI({ squares, onSquareClick, status, onReset, onBackToMenu }) {
 }
 
 
-// --- Helper Functions ---
+
 function isBoardFull(squares) {
   return squares.every(square => square !== null);
 }
